@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+.venv
+
+# CDK
+*.swp
+package-lock.json
+__pycache__
+.pytest_cache
+.venv
+*.egg-info
+cdk.out
+.cdk.staging
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# Environment
+.env
+.env.local
