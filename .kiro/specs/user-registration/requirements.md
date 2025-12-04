@@ -4,21 +4,6 @@
 
 This document specifies the requirements for a user registration system that manages event attendance with capacity constraints and waitlist functionality. The system enables users to register for events, handles capacity limits, manages waitlists when events are full, and allows users to track their registrations.
 
-### Core Requirements (1-5)
-The first five requirements directly address the specified functional requirements:
-1. User creation with basic information (userId, name)
-2. Event configuration with capacity and optional waitlist
-3. User registration with capacity enforcement and waitlist handling
-4. User unregistration with automatic waitlist promotion
-5. Listing registered events for users
-
-### Extended Requirements (6-7)
-Requirements 6 and 7 are additional enhancements that support the core functionality:
-- **Requirement 6**: Waitlist status viewing - enables users to check their position in waitlists
-- **Requirement 7**: Data consistency guarantees - ensures system integrity during concurrent operations
-
-These extended requirements provide a more complete and robust system but are not part of the original specification.
-
 ## Glossary
 
 - **User**: An individual entity in the system identified by a unique userId and name
@@ -105,3 +90,7 @@ These extended requirements provide a more complete and robust system but are no
 2. WHEN any waitlist operation completes, THE System SHALL maintain the correct order of Users in the waitlist
 3. WHEN concurrent registration requests occur for the last available spot, THE System SHALL process them atomically to prevent over-registration
 4. WHEN a User is promoted from waitlist to registered, THE System SHALL ensure the User is removed from the waitlist and added to registrations in a single atomic operation
+
+## Extended Scope
+
+Requirements 6 and 7 are enhancements beyond the original functional specification. Requirement 6 provides waitlist status visibility for users, while Requirement 7 ensures data consistency and integrity during concurrent operations. These additions support a more complete and robust system implementation.
