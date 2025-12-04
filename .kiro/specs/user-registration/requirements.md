@@ -4,6 +4,21 @@
 
 This document specifies the requirements for a user registration system that manages event attendance with capacity constraints and waitlist functionality. The system enables users to register for events, handles capacity limits, manages waitlists when events are full, and allows users to track their registrations.
 
+### Core Requirements (1-5)
+The first five requirements directly address the specified functional requirements:
+1. User creation with basic information (userId, name)
+2. Event configuration with capacity and optional waitlist
+3. User registration with capacity enforcement and waitlist handling
+4. User unregistration with automatic waitlist promotion
+5. Listing registered events for users
+
+### Extended Requirements (6-7)
+Requirements 6 and 7 are additional enhancements that support the core functionality:
+- **Requirement 6**: Waitlist status viewing - enables users to check their position in waitlists
+- **Requirement 7**: Data consistency guarantees - ensures system integrity during concurrent operations
+
+These extended requirements provide a more complete and robust system but are not part of the original specification.
+
 ## Glossary
 
 - **User**: An individual entity in the system identified by a unique userId and name
